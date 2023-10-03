@@ -11,11 +11,12 @@ result=""
 
 while read line; do
     for (( i=0; i<${#line}; i++ )); do
-        result="$result${line:i:1} $line_num $i \n"
+        result="$result$(printf "%d" "'${line:i:1}") $line_num $i \n"
     done
 
     line_num=$((line_num+1))
 done
+
 
 shuffeled=$(/bin/echo -ne $result | shuf)
 
@@ -23,8 +24,9 @@ tput clear
 while read line; do
     read a b c <<< "$line"
 
+
     tput cup $b $c
-    echo -n $a
+    printf "\\x$(printf "%x" $a)\n"
     sleep $1
 done <<< "$shuffeled"
 
