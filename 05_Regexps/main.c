@@ -29,18 +29,22 @@ void replace_matches(char *string, char *substitution, regmatch_t *matches) {
     }
 
     while (*substitution) {
-        if (*substitution != '\\') {
-            printf("%c", *substitution);
-            substitution++;
-        } else {
-            int i = 0, shift = 0;
-            sscanf(substitution, "\\%d%n", &i, &shift);
-
-            printf("%.*s", matches[i].rm_eo - matches[i].rm_so,
-                   string + matches[i].rm_so);
-
-            substitution += shift;
+        char *next = strchr(substitution, '\\');
+        if (next == NULL) {
+            printf("%s", substitution);
+            break;
         }
+
+        printf("%.*s", (int)(next - substitution), substitution);
+
+        substitution = next;
+        int i = 0, shift = 0;
+        sscanf(substitution, "\\%d%n", &i, &shift);
+
+        printf("%.*s", matches[i].rm_eo - matches[i].rm_so,
+               string + matches[i].rm_so);
+
+        substitution += shift;
     }
 
     if (use_color) {

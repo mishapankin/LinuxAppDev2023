@@ -21,6 +21,6 @@ test: esub
 	do_test "a(bc)d" "x\\1y" "_abcd_"; \
 	do_test "a(b*)d" "x\\1y" "_ad_"; \
 	do_test "a(b*)d" "x\\1y" "_abbbbbbbbbbbbbbbbbbbbbb_"; \
-	do_test "a(b*)(bb)d" "x\\1y\\2" "_abbb_"; \
+	do_test "a(b*)(bb)d" "x\\1y\\2" "_abbbd_"; \
 
 .PHONY: all clean test
