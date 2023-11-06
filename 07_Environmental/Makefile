@@ -11,4 +11,4 @@ all:
 distclean:
 	rm -rf $(BUILD_DIR)
 	rm -rf $(BIN_DIR)
-	rm test.out
+	rm -f test.out

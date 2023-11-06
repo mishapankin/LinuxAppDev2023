@@ -1,25 +1,37 @@
 >     md5 "hello"
-MhGPOIFgKAo2HId8xeMPHAAAAAA=
+hello
+MhGPOIFgKAo2HId8xeMPHA==
 >     sha1 "hello"
+hello
 mn9NlQc0m2hRIBcqzokmiTRNegM=
 >     tth "hello"
-jiPyoNxarmQj6U0GhXhqX6gEAkc=
+hello
+jiPyoNxarmQj6U0GhXhqX6gEAkeHcvcR
 >     MD5 "hello"
-32118f388160280a361c877cc5e30f1c00000000
+hello
+32118f388160280a361c877cc5e30f1c
 >     SHA1 "hello"
+hello
 9a7f4d9507349b685120172ace892689344d7a03
 >     TTH "hello"
-8e23f2a0dc5aae6423e94d0685786a5fa8040247
+hello
+8e23f2a0dc5aae6423e94d0685786a5fa80402478772f711
 >     md5 testfile
-yBdDOeT9RI0yB/JIRWNGH7KUoNE=
+Hello
+yBdDOeT9RI0yB/JIRWNGHw==
 >     sha1 testfile
+Hello
 iwEKdCAEQTF+0hwkAdgmUnIZTnw=
 >     tth testfile
-i89BnCkmweKiODDdC0me9LRK828=
+Hello
+i89BnCkmweKiODDdC0me9LRK829qLCS2
 >     MD5 testfile
-c8174339e4fd448d3207f2484563461fb294a0d1
+Hello
+c8174339e4fd448d3207f2484563461f
 >     SHA1 testfile
+Hello
 8b010a74200441317ed21c2401d8265272194e7c
 >     TTH testfile
-8bcf419c2926c1e2a23830dd0b499ef4b44af36f
+Hello
+8bcf419c2926c1e2a23830dd0b499ef4b44af36f6a2c24b6
 > 

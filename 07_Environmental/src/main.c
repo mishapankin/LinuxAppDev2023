@@ -20,19 +20,21 @@ void upper(char *str) {
 }
 
 void print_hash(unsigned int algo, bool hex, char *str) {
+    printf("%s\n", str);
+
     unsigned char hash[32];
     rhash_msg(algo, str, strlen(str), hash);
 
     if (hex) {
         char hex_output[65];
-        rhash_print_bytes(hex_output, hash, rhash_get_digest_size(RHASH_SHA1),
+        rhash_print_bytes(hex_output, hash, rhash_get_digest_size(algo),
                           RHPR_HEX);
 
         printf("%s\n", hex_output);
     } else {
         char base64_output[45];
-        rhash_print_bytes(base64_output, hash,
-                          rhash_get_digest_size(RHASH_SHA1), RHPR_BASE64);
+        rhash_print_bytes(base64_output, hash, rhash_get_digest_size(algo),
+                          RHPR_BASE64);
 
         printf("%s\n", base64_output);
     }
