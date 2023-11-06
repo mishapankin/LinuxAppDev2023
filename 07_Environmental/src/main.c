@@ -20,8 +20,6 @@ void upper(char *str) {
 }
 
 void print_hash(unsigned int algo, bool hex, char *str) {
-    printf("%s\n", str);
-
     unsigned char hash[32];
     rhash_msg(algo, str, strlen(str), hash);
 

@@ -1,37 +1,25 @@
 >     md5 "hello"
-hello
 MhGPOIFgKAo2HId8xeMPHA==
 >     sha1 "hello"
-hello
 mn9NlQc0m2hRIBcqzokmiTRNegM=
 >     tth "hello"
-hello
 jiPyoNxarmQj6U0GhXhqX6gEAkeHcvcR
 >     MD5 "hello"
-hello
 32118f388160280a361c877cc5e30f1c
 >     SHA1 "hello"
-hello
 9a7f4d9507349b685120172ace892689344d7a03
 >     TTH "hello"
-hello
 8e23f2a0dc5aae6423e94d0685786a5fa80402478772f711
 >     md5 testfile
-Hello
 yBdDOeT9RI0yB/JIRWNGHw==
 >     sha1 testfile
-Hello
 iwEKdCAEQTF+0hwkAdgmUnIZTnw=
 >     tth testfile
-Hello
 i89BnCkmweKiODDdC0me9LRK829qLCS2
 >     MD5 testfile
-Hello
 c8174339e4fd448d3207f2484563461f
 >     SHA1 testfile
-Hello
 8b010a74200441317ed21c2401d8265272194e7c
 >     TTH testfile
-Hello
 8bcf419c2926c1e2a23830dd0b499ef4b44af36f6a2c24b6
 > 
