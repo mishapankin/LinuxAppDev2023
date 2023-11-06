@@ -92,5 +92,6 @@ int main() {
         print_hash(id, hex, buff);
     }
 
+    printf("\n");
     free(line);
 }
