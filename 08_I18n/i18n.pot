@@ -1,0 +1,33 @@
+# i18n homework project.
+# Copyright (C) 2013 Mikhail Pankin
+# This file is distributed under the same license as the i18n package.
+# Mikhail Pankin <mishapankin@gmail.com>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: i18n 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-13 21:48+0300\n"
+"PO-Revision-Date: 2023-11-13 21:48+0300\n"
+"Last-Translator: Mikhail Pankin <mishapankin@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.c:14
+#, c-format
+msgid "Guess a number from 1 to 100\n"
+msgstr ""
+
+#: main.c:20
+#, c-format
+msgid "Is the number greater than %d? (y/n)\n"
+msgstr ""
+
+#: main.c:31
+#, c-format
+msgid "Your number is %d\n"
+msgstr ""
