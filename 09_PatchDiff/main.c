@@ -43,7 +43,7 @@ void fill_labyrinth(int x, int y, char *labyrinth) {
 }
 
 int main(int argc, char **argv) {
-    srand(time(NULL));
+    unsigned seed = time(NULL);
     if (argc == 2) {
         size = atoi(argv[1]);
     }
@@ -52,6 +52,13 @@ int main(int argc, char **argv) {
         wall = argv[1][1];
         size = atoi(argv[2]);
     }
+    if (argc == 4) {
+        seed = atoi(argv[1]);
+        path = argv[2][0];
+        wall = argv[2][1];
+        size = atoi(argv[3]);
+    }
+    srand(seed);
 
     char *labyrinth = malloc(size * size * sizeof(char));
 
