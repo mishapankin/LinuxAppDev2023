@@ -1,0 +1,16 @@
+diff --git a/09_PatchDiff/main.c b/09_PatchDiff/main.c
+index dfea59f..e0c2273 100644
+--- a/09_PatchDiff/main.c
++++ b/09_PatchDiff/main.c
+@@ -47,6 +47,11 @@ int main(int argc, char **argv) {
+     if (argc == 2) {
+         size = atoi(argv[1]);
+     }
++    if (argc == 3) {
++        path = argv[1][0];
++        wall = argv[1][1];
++        size = atoi(argv[2]);
++    }
+ 
+     char *labyrinth = malloc(size * size * sizeof(char));
+ 

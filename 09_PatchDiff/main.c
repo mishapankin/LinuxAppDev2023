@@ -47,6 +47,11 @@ int main(int argc, char **argv) {
     if (argc == 2) {
         size = atoi(argv[1]);
     }
+    if (argc == 3) {
+        path = argv[1][0];
+        wall = argv[1][1];
+        size = atoi(argv[2]);
+    }
 
     char *labyrinth = malloc(size * size * sizeof(char));
 
